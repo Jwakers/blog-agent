@@ -1,0 +1,8 @@
+package.json
+.shadowenv.d
+.vscode
+node_modules
+prisma/*
+!prisma/seed.ts
+public
+.shopify
