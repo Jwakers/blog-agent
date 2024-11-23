@@ -3,18 +3,18 @@
 client_id = "c5d8efa9ccd39b4163c8e4ee400f25fe"
 name = "BlogGen (dev)"
 handle = "blog-gen"
-application_url = "https://arrivals-deputy-ceremony-elect.trycloudflare.com"
+application_url = "https://supplied-cruz-extraction-fabrics.trycloudflare.com"
 embedded = true
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "read_files,write_files"
+scopes = "read_content,write_content"
 
 [auth]
 redirect_urls = [
-  "https://arrivals-deputy-ceremony-elect.trycloudflare.com/auth/callback",
-  "https://arrivals-deputy-ceremony-elect.trycloudflare.com/auth/shopify/callback",
-  "https://arrivals-deputy-ceremony-elect.trycloudflare.com/api/auth/callback"
+  "https://supplied-cruz-extraction-fabrics.trycloudflare.com/auth/callback",
+  "https://supplied-cruz-extraction-fabrics.trycloudflare.com/auth/shopify/callback",
+  "https://supplied-cruz-extraction-fabrics.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]

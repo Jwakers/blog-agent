@@ -8,7 +8,7 @@ embedded = true
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = ""
+scopes = "read_content,write_content"
 
 [auth]
 redirect_urls = [
@@ -21,21 +21,16 @@ redirect_urls = [
 api_version = "2024-10"
 
   [[webhooks.subscriptions]]
-  topics = [ "app/uninstalled" ]
-  uri = "/webhooks/app/uninstalled"
+  uri = "/webhooks/app/compliance"
+  compliance_topics = [ "customers/data_request", "customers/redact", "shop/redact" ]
 
   [[webhooks.subscriptions]]
-  topics = ["app_subscriptions/update"]
+  topics = [ "app_subscriptions/update" ]
   uri = "/webhooks/app/subscription"
 
   [[webhooks.subscriptions]]
-  compliance_topics = [ "customers/data_request", "customers/redact", "shop/redact" ]
-  uri = "/webhooks/app/compliance"
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
 
 [pos]
 embedded = false
-
-[build]
-dev_store_url = "nocturna-digital-testing.myshopify.com"
-automatically_update_urls_on_dev = true
-include_config_on_deploy = true

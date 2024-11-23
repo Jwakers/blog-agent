@@ -1,7 +1,9 @@
 # Todo
 
-- [ ] Create landing page
-- [ ] Create blog page
+- [x] Create landing page
+- [x] Show recent blogs in side panel
+- [ ] Replace deprecated json() function
+- [ ] "Create blog" page
   - [ ] Add to app bridge navigation
   - [ ] Rich text area
   - [ ] Blog generation endpoint (stream response)
