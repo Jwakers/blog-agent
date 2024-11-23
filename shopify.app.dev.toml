@@ -1,9 +1,9 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-client_id = "6bc44285f5684fd901ba3afdbd475adb"
-name = "Blog Agent (dev)"
-handle = "blog-agent"
-application_url = "https://notification-inns-findlaw-with.trycloudflare.com"
+client_id = "c5d8efa9ccd39b4163c8e4ee400f25fe"
+name = "BlogGen (dev)"
+handle = "blog-gen"
+application_url = "https://arrivals-deputy-ceremony-elect.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -12,9 +12,9 @@ scopes = "read_files,write_files"
 
 [auth]
 redirect_urls = [
-  "https://notification-inns-findlaw-with.trycloudflare.com/auth/callback",
-  "https://notification-inns-findlaw-with.trycloudflare.com/auth/shopify/callback",
-  "https://notification-inns-findlaw-with.trycloudflare.com/api/auth/callback"
+  "https://arrivals-deputy-ceremony-elect.trycloudflare.com/auth/callback",
+  "https://arrivals-deputy-ceremony-elect.trycloudflare.com/auth/shopify/callback",
+  "https://arrivals-deputy-ceremony-elect.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]

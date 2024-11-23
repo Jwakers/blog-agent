@@ -21,7 +21,7 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
     `No active subscription found for shop: ${session.shop}`,
   );
 
-  // https://admin.shopify.com/store/nocturna-digital-testing/charges/blog-agent/pricing_plans
+  // https://admin.shopify.com/store/nocturna-digital-testing/charges/blog-gen/pricing_plans
   try {
     // Perform tier update asynchronously to not block app load
     updateShopTier(session.shop, subscription.name).catch((error) => {

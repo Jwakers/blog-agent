@@ -1,20 +1,20 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-client_id = "6bc44285f5684fd901ba3afdbd475adb"
-name = "Blog Agent"
-handle = "blog-agent"
-application_url = "https://blog-agent.fly.dev"
+client_id = "c5d8efa9ccd39b4163c8e4ee400f25fe"
+name = "BlogGen"
+handle = "blog-gen"
+application_url = "https://blog-gen.fly.dev"
 embedded = true
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "read_files,write_files"
+scopes = ""
 
 [auth]
 redirect_urls = [
-  "https://blog-agent.fly.dev/auth/callback",
-  "https://blog-agent.fly.dev/auth/shopify/callback",
-  "https://blog-agent.fly.dev/api/auth/callback"
+  "https://blog-gen.fly.dev/auth/callback",
+  "https://blog-gen.fly.dev/auth/shopify/callback",
+  "https://blog-gen.fly.dev/api/auth/callback"
 ]
 
 [webhooks]
