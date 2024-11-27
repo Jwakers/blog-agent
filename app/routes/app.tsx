@@ -6,7 +6,6 @@ import polarisStyles from "@shopify/polaris/build/esm/styles.css?url";
 import { AppProvider } from "@shopify/shopify-app-remix/react";
 import { boundary } from "@shopify/shopify-app-remix/server";
 
-import { updateShopTier } from "app/models/subscription.server";
 import { authenticate } from "../shopify.server";
 
 export const links = () => [{ rel: "stylesheet", href: polarisStyles }];
@@ -22,15 +21,6 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
   );
 
   // https://admin.shopify.com/store/nocturna-digital-testing/charges/blog-gen/pricing_plans
-  try {
-    // Perform tier update asynchronously to not block app load
-    updateShopTier(session.shop, subscription.name).catch((error) => {
-      console.error("Failed to update shop tier:", error);
-    });
-  } catch (error) {
-    console.error("Failed to initiate tier update:", error);
-  }
-
   return json({ apiKey: process.env.SHOPIFY_API_KEY || "" });
 };
 
@@ -43,6 +33,7 @@ export default function App() {
         <Link to="/app" rel="home">
           Home
         </Link>
+        <Link to="/app/create-blog">Create blog</Link>
       </NavMenu>
       <Outlet />
     </AppProvider>
